@@ -1,14 +1,14 @@
 Write-Host minutes:
 $time=Read-Host
-clear
+Clear-Host
 Write-Host $time minutes left
 $array=1..$time
 foreach ($item in $array) {
-    sleep 60
+    Start-Sleep 60
     $left=$time-$item
-    clear
+    Clear-Host
     Write-Host $left minutes left 
 }
 Write-Host time is up!
-sleep 3
+Start-Sleep 3
 rundll32.exe user32.dll,LockWorkStation
