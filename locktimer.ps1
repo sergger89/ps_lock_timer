@@ -1,5 +1,7 @@
 Write-Host minutes:
 $time=Read-Host
+clear
+Write-Host $time minutes left
 $array=1..$time
 foreach ($item in $array) {
     sleep 60
