@@ -9,4 +9,4 @@ foreach ($item in $array) {
 }
 Write-Host time is up!
 sleep 3
-#rundll32.exe user32.dll,LockWorkStation
+rundll32.exe user32.dll,LockWorkStation
